@@ -1,0 +1,1 @@
+1) SELECT DISTINCT cust.CustomerID FROM Orders ord, Customers cust WHERE ord.ShippedDate is NULL AND ord.CustomerID = cust.CustomerID;
