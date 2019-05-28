@@ -1,0 +1,252 @@
+CREATE DATABASE JironPizza;
+
+USE JironPizza;
+
+/* PROVEEDOR */
+/* Representa los proveedore del restaurante */
+CREATE TABLE Proveedor(
+ruc varchar(200) NOT NULL PRIMARY KEY,
+nombre varchar(200) NOT NULL,
+razon_social varchar(200),
+telefono varchar(200),
+direccion varchar(200)
+);
+
+
+
+/* COMPRA - PROVEEDOR */
+/* Representa las compras que se realizan a cada proveedor */
+CREATE TABLE CompraProveedor(
+compra_id int IDENTITY(1,1) PRIMARY KEY,
+ruc varchar(200) FOREIGN KEY REFERENCES Proveedor(ruc),
+monto money NOT NULL CHECK(monto > 0),
+fecha DATE NOT NULL
+);
+
+
+
+/* INSUMO */
+/* Representa los insumos del restaurante */
+CREATE TABLE Insumo(
+insumo_id int IDENTITY(1,1) PRIMARY KEY,
+nombre varchar(200) NOT NULL,
+descripcion varchar(200),
+precio money CHECK(precio > 0) NOT NULL,
+unidad varchar(200) NOT NULL
+);
+
+
+
+/* DETALLE - COMPRA */
+/* Es un historial de compras de insumos a los proveedores */
+CREATE TABLE DetalleCompra(
+compra_id int NOT NULL FOREIGN KEY REFERENCES CompraProveedor(compra_id),
+insumo_id int NOT NULL FOREIGN KEY REFERENCES Insumo(insumo_id),
+cantidad float NOT NULL CHECK (cantidad > 0),
+monto money NOT NULL CHECK (monto > 0),
+PRIMARY KEY(compra_id, insumo_id)
+);
+
+
+
+/* PRODUCTO */
+/* Representa los productos que ofrece el restaurante */
+CREATE TABLE Producto(
+producto_id int IDENTITY(1,1) PRIMARY KEY,
+nombre varchar(200) NOT NULL,
+descripcion varchar(200),
+precio money NOT NULL CHECK(precio > 0)
+);
+
+
+
+/* PRODUCTO - INSUMO */
+/* La informaci�n de qu� insumos se utilizan en cad producto */
+CREATE TABLE ProductoInsumo(
+producto_id int NOT NULL FOREIGN KEY REFERENCES Producto(producto_id),
+insumo_id int NOT NULL FOREIGN KEY REFERENCES Insumo(insumo_id),
+cantidad float NOT NULL CHECK(cantidad > 0),
+PRIMARY KEY (producto_id, insumo_id)
+);
+
+
+
+/* SOCIO */
+/* Representa las categorias de socios existentes */
+CREATE TABLE Socio(
+socio_id int IDENTITY(1,1) PRIMARY KEY,
+nombre varchar(200) NOT NULL,
+descripcion varchar(200),
+minimo_compras int NOT NULL CHECK(minimo_compras > 0),
+maximo_compras int NOT NULL CHECK(maximo_compras > 0)
+);
+
+
+
+/* PROMOCION */
+/* Representa las promociones de cada rango de socio */
+CREATE TABLE Promocion(
+promocion_id INT IDENTITY(1,1) PRIMARY KEY,
+socio_id INT FOREIGN KEY REFERENCES Socio(socio_id),
+descripcion VARCHAR(200) NOT NULL
+);
+
+
+
+/* PRODUCTO - PROMOCION */
+/* Representa el detalle de las promociones */
+CREATE TABLE ProductoPromocion(
+promocion_id INT FOREIGN KEY REFERENCES Promocion(promocion_id),
+producto_id INT FOREIGN KEY REFERENCES Producto(producto_id),
+descuento float NOT NULL
+);
+
+
+
+/* CLIENTE */
+/* Representa a un cliente de la empresa */
+CREATE TABLE Cliente(
+cliente_id int IDENTITY(1,1) PRIMARY KEY,
+dni varchar(200) NOT NULL,
+nombre varchar(200) NOT NULL,
+apellido varchar(200) NOT NULL,
+direccion varchar(200),
+correo varchar(200),
+sexo varchar(200),
+socio_id int FOREIGN KEY REFERENCES Socio(socio_id),
+compras int NOT NULL CHECK(compras >= 0)
+);
+
+
+
+/* LOCAL */
+/* Representa un local de la empresa */
+CREATE TABLE Locals(
+local_id int IDENTITY(1,1) PRIMARY KEY,
+direccion varchar(200) NOT NULL,
+capacidad int NOT NULL CHECK(capacidad > 0)
+);
+
+
+
+/* MESA */
+/* Representa las mesas de cada local */
+CREATE TABLE Mesa(
+mesa_id int IDENTITY(1,1) PRIMARY KEY,
+local_id int UNIQUE FOREIGN KEY REFERENCES Locals(local_id)
+);
+
+
+
+
+/* ALMACEN */
+/* Representa el almac�n que tiene cada local */
+CREATE TABLE Almacen(
+almacen_id int IDENTITY(1,1) PRIMARY KEY,
+local_id int UNIQUE FOREIGN KEY REFERENCES Locals(local_id)
+);
+
+
+
+/* INSUMO - ALMACEN */
+/* REPRESENTA QU� INSUMO TIENE CADA ALMAC�N */
+CREATE TABLE InsumoAlmacen(
+insumo_id int FOREIGN KEY REFERENCES Insumo(insumo_id),
+almacen_id int FOREIGN KEY REFERENCES Almacen(almacen_id),
+cantidad float NOT NULL CHECK(cantidad > 0),
+PRIMARY KEY(insumo_id, almacen_id)
+);
+
+
+
+/* TIPO - EMPLEADO */
+/* Representa los roles de los empleados que hay en los locales */
+CREATE TABLE TipoEmpleado(
+tipo_id int IDENTITY(1,1) PRIMARY KEY,
+nombre varchar(200) NOT NULL,
+salario money NOT NULL CHECK(salario > 0)
+);
+
+
+
+/* Provincia */
+CREATE TABLE Provincia(
+provincia_id int IDENTITY(1,1) PRIMARY KEY,
+nombre varchar(200) NOT NULL
+);
+
+
+
+/* DISTRITO */
+CREATE TABLE Distrito(
+distrito_id int IDENTITY(1,1) PRIMARY KEY,
+provincia_id int FOREIGN KEY REFERENCES Provincia(provincia_id)
+);
+
+
+
+/* CALLE */
+CREATE TABLE Calle(
+calle_id int IDENTITY(1,1) PRIMARY KEY,
+distrito_id int FOREIGN KEY REFERENCES Distrito(distrito_id)
+);
+
+
+
+/* INFORMACION - EMPLEADO */
+/* Representa la informaci�n del empleado */
+CREATE TABLE InformacionEmpleado(
+informacion_id int IDENTITY(1,1) PRIMARY KEY,
+nombre varchar(200) NOT NULL,
+apellido varchar(200) NOT NULL,
+correo varchar(200) NOT NULL,
+calle_id int FOREIGN KEY REFERENCES Calle(calle_id),
+direccion varchar(200),
+telefono varchar(200)
+);
+
+
+
+/* EMPLEADO */
+/* Representa los empleados del los locales */
+CREATE TABLE Empleado(
+empleado_id int IDENTITY(1,1) PRIMARY KEY,
+tipo_id int FOREIGN KEY REFERENCES TipoEmpleado(tipo_id),
+local_id int FOREIGN KEY REFERENCES Locals(local_id),
+informacion_id int FOREIGN KEY REFERENCES InformacionEmpleado(informacion_id)
+);
+
+
+
+/* ASISTENCIA */
+/* Historial de asistencia del empleado */
+CREATE TABLE Asistencia(
+asistencia_id int IDENTITY(1,1) PRIMARY KEY,
+empleado_id int FOREIGN KEY REFERENCES Empleado(empleado_id),
+ingreso DATE,
+salida DATE
+);
+
+
+
+/* COMPROBANTE */
+/* Representa el comprobante de pago de un cliente */
+CREATE TABLE Comprobante(
+comprobante_id int IDENTITY(1,1) PRIMARY KEY,
+cliente_id int FOREIGN KEY REFERENCES Cliente(cliente_id),
+mesa_id int FOREIGN KEY REFERENCES Mesa(mesa_id),
+empleado_id int FOREIGN KEY REFERENCES Empleado(empleado_id),
+monto MONEY NOT NULL CHECK (monto > 0),
+fecha date
+);
+
+
+/* PRODUCTO - COMPROBANTE */
+/* Detalle del comprobante */
+CREATE TABLE ProductoComprobante(
+producto_id INT FOREIGN KEY REFERENCES Producto(producto_id),
+comprobante_id INT FOREIGN KEY REFERENCES Comprobante(comprobante_id),
+PRIMARY KEY(producto_id, comprobante_id)
+);
+
+
