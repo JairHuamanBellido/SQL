@@ -1,0 +1,44 @@
+
+
+# Script de insercion para la tabla Producto
+
+insert into Producto (Id, Nombre, Descripcion, Precio) values (1, 'Pizza Americana Mediana', 'Los clasicos nunca pasan de moda', 15.99);
+insert into Producto (Id, Nombre, Descripcion, Precio) values (2, 'Pizza Huawana Mediana', 'Una piña marca la diferencia', 13.99);
+insert into Producto (Id, Nombre, Descripcion, Precio) values (3, 'Pizza Americana Grande', 'Los clasicos nunca pasan de moda', 45.99);
+insert into Producto (Id, Nombre, Descripcion, Precio) values (4, 'Pizza Americana Personal', 'Disfrutalo tu mismo', 12.99);
+insert into Producto (Id, Nombre, Descripcion, Precio) values (5, 'Pizza Mediterranea Mediana', 'Un submundo por conocer', 23.99);
+insert into Producto (Id, Nombre, Descripcion, Precio) values (6, 'Pizza Americana XL', 'Disfrutalo con tus patas', 45.99);
+insert into Producto (Id, Nombre, Descripcion, Precio) values (7, 'Menu Radioactivo', 'Conoce tus límites', 15.99);
+
+
+#Script de insercion para la tabla Proveedor
+insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (16137927086, 'Good Food S.A', 'Quispes I.L.R', 964810161, 'Av Andrés Gamarra 1244, La Victoria');
+insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (15085893667, 'Botellita Zaki', 'Exportacione SFV', 957094112, 'Av Matelini 8311, Barranco');
+insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (16779304144, 'Adrenalina Buzz', 'Buzz INC', 935031785, 'Av Larco 2233, Miraflores');
+insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (15522576132, 'Los hermanos Kyoto', 'Qesos E.X.P', 956239300, 'Av 28 de Julio, Miraflores');
+insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (14064629849, 'BangBros S.A', 'Jugos INC', 914321144, 'Av Tomas Valle 1298, San Martin de Porres');
+insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (13183738016, 'Rubi&Lalo S.A', 'Tenedores INC', 931904769, 'Av Chinchaysuyo 3341, Lince');
+insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (12315920835, 'Censiso O.N.G', 'Verduras I.L.R', 960313254, 'Av Proceres 2311, Surco');
+insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (13083308641, 'Pizza Factory S.A', 'Pizza INC', 934184758, 'Javier Prado 3441 Piso 2, La Molina');
+insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (11420051326, 'La esquina de Don Simon', 'Simon S.A', 943590036, 'Av La Encalada 176, La Molina');
+insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (13510268821, 'Mario y Asociados', 'MA S.A', 926016070, 'Av Brazil 4443, Madgalena');
+
+
+#Script de insercion para la tabla Local
+insert into Local (Codigo, Encargado, Almacen, Direccion, Capacidad) values (1, 'Alberto Santana Flores', 'a1', 'Av Arequipa 1245, Lince', 32);
+insert into Local (Codigo, Encargado, Almacen, Direccion, Capacidad) values (2, 'Dylan Vizcarra Pampañaupa', 'a2', 'Av Proceres de la Independencia 2451, SJL', 38);
+insert into Local (Codigo, Encargado, Almacen, Direccion, Capacidad) values (3, 'Mario Perez Huaman', 'a3', 'Paseo de la república 2812, Miraflores', 38);
+insert into Local (Codigo, Encargado, Almacen, Direccion, Capacidad) values (4, 'Ronald Hidalgo Hinostroza', 'a4', 'Av Andrés Salazar 4122,La Victoria ', 35);
+insert into Local (Codigo, Encargado, Almacen, Direccion, Capacidad) values (5, 'Steven Altamirano Gamonal', 'a5', 'Av Alameda Sur 128, Chorrillos', 38);
+insert into Local (Codigo, Encargado, Almacen, Direccion, Capacidad) values (6, 'Lucia Angulo Linares', 'a6', 'Jiron Puno 1433, Cerado de Lima', 33);
+insert into Local (Codigo, Encargado, Almacen, Direccion, Capacidad) values (7, 'Rosella Jimenez Escobar', 'a7', 'Cerro Oculto Sendero 14, Ancón', 34);
+
+
+#Script de insercion para la tabla Cliente
+insert into Cliente (Codigo, Dni, Nombre, Apellido, Telefono, Direccion,  Sexo, Socio, Compras) values (1, 56539196, 'Bruno Fernando', 'Larios Escudero', 2750523, 'Jr. Vicente Alcántar # 3161 Piso 15 Miranda Sur, Callao',  'Male', 2, 3);
+insert into Cliente (Codigo, Dni, Nombre, Apellido, Telefono, Direccion,  Sexo, Socio, Compras) values (2, 76210006, 'María Camila', 'Solorzano Flores', 2724514, 'Jr. Mateo Puente # 95 Dpto. 487 Ivanna Baja, Tacna',  'Female', 3, 1);
+insert into Cliente (Codigo, Dni, Nombre, Apellido, Telefono, Direccion,  Sexo, Socio, Compras) values (3, 38812926, 'Jorge Alberto', 'Perez de Cuella', 4729459, 'Urb. Carolina De La Torre # 864 Dpto. 362 Núñez Sur, Huanuco', 'Female', 2, 2);
+insert into Cliente (Codigo, Dni, Nombre, Apellido, Telefono, Direccion,  Sexo, Socio, Compras) values (4, 27562495, 'Eduardo', 'Estela Pardo', 4346352, 'Jr. Juan Esteban Ocampo # 05 Don Simón Olivas, Moquegua', 'Female', 2, 6);
+insert into Cliente (Codigo, Dni, Nombre, Apellido, Telefono, Direccion,  Sexo, Socio, Compras) values (5, 88865800, 'Luis Alberto', 'Bellido Loera', 4721745, 'Jr. Laura Mejía # 4 Puerto Lucas, Piura',  'Female', 3, 2);
+insert into Cliente (Codigo, Dni, Nombre, Apellido, Telefono, Direccion,  Sexo, Socio, Compras) values (6, 71358262, 'Daniel', 'Espinoza Montalvo', 2370431, 'Urb. Ornela Arroyo # 30874 Quintanilla Alta, Jauja',  'Female', 2, 5);
+insert into Cliente (Codigo, Dni, Nombre, Apellido, Telefono, Direccion,  Sexo, Socio, Compras) values (7, 81387160, 'Lourder ', 'Flores Sifuentes', 3147832, 'Urb. Ivanna Cedillo # 72 Gabriel Alta, Jauja', 'Male', 1, 4);
