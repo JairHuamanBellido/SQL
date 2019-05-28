@@ -1,44 +1,115 @@
+## Proveedor
+## Insumo
+## Cliente
+## Local
+## Producto
+## Insumo Producto
+## Compra Proveedor
+## Detalle Compra
+## Socio
+## PROMOCION
+## producto Promocion
+## Almacen
 
+#Script de insercion para la tabla Local
+insert into Local (local_id, direccion, capacidad) values (1, 'Av Arequipa 1245, Lince', 32);
+insert into Local (local_id, direccion, capacidad) values (2, 'Av Proceres de la Independencia 2451, SJL', 38);
+insert into Local (local_id, direccion, capacidad) values (3, 'Paseo de la república 2812, Miraflores', 38);
+insert into Local (local_id, direccion, capacidad) values (4, 'Av Andrés Salazar 4122,La Victoria ', 35);
+insert into Local (local_id, direccion, capacidad) values (5, 'Av Alameda Sur 128, Chorrillos', 38);
+insert into Local (local_id, direccion, capacidad) values (6, 'Jiron Puno 1433, Cerado de Lima', 33);
+insert into Local (local_id, direccion, capacidad) values (7, 'Cerro Oculto Sendero 14, Ancón', 34);
 
-# Script de insercion para la tabla Producto
-
-insert into Producto (Id, Nombre, Descripcion, Precio) values (1, 'Pizza Americana Mediana', 'Los clasicos nunca pasan de moda', 15.99);
-insert into Producto (Id, Nombre, Descripcion, Precio) values (2, 'Pizza Huawana Mediana', 'Una piña marca la diferencia', 13.99);
-insert into Producto (Id, Nombre, Descripcion, Precio) values (3, 'Pizza Americana Grande', 'Los clasicos nunca pasan de moda', 45.99);
-insert into Producto (Id, Nombre, Descripcion, Precio) values (4, 'Pizza Americana Personal', 'Disfrutalo tu mismo', 12.99);
-insert into Producto (Id, Nombre, Descripcion, Precio) values (5, 'Pizza Mediterranea Mediana', 'Un submundo por conocer', 23.99);
-insert into Producto (Id, Nombre, Descripcion, Precio) values (6, 'Pizza Americana XL', 'Disfrutalo con tus patas', 45.99);
-insert into Producto (Id, Nombre, Descripcion, Precio) values (7, 'Menu Radioactivo', 'Conoce tus límites', 15.99);
+#Script de insercion para la tabla Almacen
+Insert into Almacen(almacen_id,local_id) values(1,1)
+Insert into Almacen(almacen_id,local_id) values(2,2)
+Insert into Almacen(almacen_id,local_id) values(3,3)
+Insert into Almacen(almacen_id,local_id) values(4,4)
+Insert into Almacen(almacen_id,local_id) values(5,5)
+Insert into Almacen(almacen_id,local_id) values(6,6)
+Insert into Almacen(almacen_id,local_id) values(7,7)
 
 
 #Script de insercion para la tabla Proveedor
-insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (16137927086, 'Good Food S.A', 'Quispes I.L.R', 964810161, 'Av Andrés Gamarra 1244, La Victoria');
-insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (15085893667, 'Botellita Zaki', 'Exportacione SFV', 957094112, 'Av Matelini 8311, Barranco');
-insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (16779304144, 'Adrenalina Buzz', 'Buzz INC', 935031785, 'Av Larco 2233, Miraflores');
-insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (15522576132, 'Los hermanos Kyoto', 'Qesos E.X.P', 956239300, 'Av 28 de Julio, Miraflores');
-insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (14064629849, 'BangBros S.A', 'Jugos INC', 914321144, 'Av Tomas Valle 1298, San Martin de Porres');
-insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (13183738016, 'Rubi&Lalo S.A', 'Tenedores INC', 931904769, 'Av Chinchaysuyo 3341, Lince');
-insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (12315920835, 'Censiso O.N.G', 'Verduras I.L.R', 960313254, 'Av Proceres 2311, Surco');
-insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (13083308641, 'Pizza Factory S.A', 'Pizza INC', 934184758, 'Javier Prado 3441 Piso 2, La Molina');
-insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (11420051326, 'La esquina de Don Simon', 'Simon S.A', 943590036, 'Av La Encalada 176, La Molina');
-insert into Proveedor (Ruc, Nombre, Razon_Social, Telefono, Dirección) values (13510268821, 'Mario y Asociados', 'MA S.A', 926016070, 'Av Brazil 4443, Madgalena');
+insert into Proveedor (ruc, nombre, razon_social, telefono, dirección) values (16137927086, 'Good Food S.A', 'Quispes I.L.R', 964810161, 'Av Andrés Gamarra 1244, La Victoria');
+insert into Proveedor (ruc, nombre, razon_social, telefono, dirección) values (15085893667, 'Botellita Zaki', 'Exportacione SFV', 957094112, 'Av Matelini 8311, Barranco');
+insert into Proveedor (ruc, nombre, razon_social, telefono, dirección) values (16779304144, 'Adrenalina Buzz', 'Buzz INC', 935031785, 'Av Larco 2233, Miraflores');
+insert into Proveedor (ruc, nombre, razon_social, telefono, dirección) values (15522576132, 'Los hermanos Kyoto', 'Qesos E.X.P', 956239300, 'Av 28 de Julio, Miraflores');
+insert into Proveedor (ruc, nombre, razon_social, telefono, dirección) values (14064629849, 'Rups S.A', 'Jugos INC', 914321144, 'Av Tomas Valle 1298, San Martin de Porres');
+insert into Proveedor (ruc, nombre, razon_social, telefono, dirección) values (13183738016, 'Rubi&Lalo S.A', 'Tenedores INC', 931904769, 'Av Chinchaysuyo 3341, Lince');
 
 
-#Script de insercion para la tabla Local
-insert into Local (Codigo, Encargado, Almacen, Direccion, Capacidad) values (1, 'Alberto Santana Flores', 'a1', 'Av Arequipa 1245, Lince', 32);
-insert into Local (Codigo, Encargado, Almacen, Direccion, Capacidad) values (2, 'Dylan Vizcarra Pampañaupa', 'a2', 'Av Proceres de la Independencia 2451, SJL', 38);
-insert into Local (Codigo, Encargado, Almacen, Direccion, Capacidad) values (3, 'Mario Perez Huaman', 'a3', 'Paseo de la república 2812, Miraflores', 38);
-insert into Local (Codigo, Encargado, Almacen, Direccion, Capacidad) values (4, 'Ronald Hidalgo Hinostroza', 'a4', 'Av Andrés Salazar 4122,La Victoria ', 35);
-insert into Local (Codigo, Encargado, Almacen, Direccion, Capacidad) values (5, 'Steven Altamirano Gamonal', 'a5', 'Av Alameda Sur 128, Chorrillos', 38);
-insert into Local (Codigo, Encargado, Almacen, Direccion, Capacidad) values (6, 'Lucia Angulo Linares', 'a6', 'Jiron Puno 1433, Cerado de Lima', 33);
-insert into Local (Codigo, Encargado, Almacen, Direccion, Capacidad) values (7, 'Rosella Jimenez Escobar', 'a7', 'Cerro Oculto Sendero 14, Ancón', 34);
+#Insercion de la tabla Socio
+Insert into Socio(socio_id,nombre,descripcion,minimo_compras,maximo_compras) values(1,'Cliente Normal','Sorteo Mensual por una pizza Americana Familiar',0,50)
+Insert into Socio(socio_id,nombre,descripcion,minimo_compras,maximo_compras) values(2,'Cliente de Bronce','50% de descuento cada 10 visitas, 5% de descuento en combos',50,100)
+Insert into Socio(socio_id,nombre,descripcion,minimo_compras,maximo_compras) values(3,'Cliente golden','Una pizza familiar por mes, 15% de descuento en combos',100,200)
+Insert into Socio(socio_id,nombre,descripcion,minimo_compras,maximo_compras) values(4,'Cliente platino','Pizza gratis en tu cumpleaños y 20% de descuento en los combos',200,250)
 
+
+
+#Insercion de la tabla Cliente
 
 #Script de insercion para la tabla Cliente
-insert into Cliente (Codigo, Dni, Nombre, Apellido, Telefono, Direccion,  Sexo, Socio, Compras) values (1, 56539196, 'Bruno Fernando', 'Larios Escudero', 2750523, 'Jr. Vicente Alcántar # 3161 Piso 15 Miranda Sur, Callao',  'Male', 2, 3);
-insert into Cliente (Codigo, Dni, Nombre, Apellido, Telefono, Direccion,  Sexo, Socio, Compras) values (2, 76210006, 'María Camila', 'Solorzano Flores', 2724514, 'Jr. Mateo Puente # 95 Dpto. 487 Ivanna Baja, Tacna',  'Female', 3, 1);
-insert into Cliente (Codigo, Dni, Nombre, Apellido, Telefono, Direccion,  Sexo, Socio, Compras) values (3, 38812926, 'Jorge Alberto', 'Perez de Cuella', 4729459, 'Urb. Carolina De La Torre # 864 Dpto. 362 Núñez Sur, Huanuco', 'Female', 2, 2);
-insert into Cliente (Codigo, Dni, Nombre, Apellido, Telefono, Direccion,  Sexo, Socio, Compras) values (4, 27562495, 'Eduardo', 'Estela Pardo', 4346352, 'Jr. Juan Esteban Ocampo # 05 Don Simón Olivas, Moquegua', 'Female', 2, 6);
-insert into Cliente (Codigo, Dni, Nombre, Apellido, Telefono, Direccion,  Sexo, Socio, Compras) values (5, 88865800, 'Luis Alberto', 'Bellido Loera', 4721745, 'Jr. Laura Mejía # 4 Puerto Lucas, Piura',  'Female', 3, 2);
-insert into Cliente (Codigo, Dni, Nombre, Apellido, Telefono, Direccion,  Sexo, Socio, Compras) values (6, 71358262, 'Daniel', 'Espinoza Montalvo', 2370431, 'Urb. Ornela Arroyo # 30874 Quintanilla Alta, Jauja',  'Female', 2, 5);
-insert into Cliente (Codigo, Dni, Nombre, Apellido, Telefono, Direccion,  Sexo, Socio, Compras) values (7, 81387160, 'Lourder ', 'Flores Sifuentes', 3147832, 'Urb. Ivanna Cedillo # 72 Gabriel Alta, Jauja', 'Male', 1, 4);
+insert into Cliente (client_id, dni, nombre, apellido, Direccion, correo, sexo, socio_id, compras) values (1, 56539196, 'Bruno Fernando', 'Larios Escudero',  'Jr. Vicente Alcántar # 3161 Piso 15 Miranda Sur, Callao','BrunoFernando1996@gmail.com' ,  'Male', 2, 3);
+insert into Cliente (client_id, dni, nombre, apellido, Direccion, correo, sexo, socio_id, compras) values (2, 76210006, 'María Camila', 'Solorzano Flores',  'Jr. Mateo Puente # 95 Dpto. 487 Ivanna Baja, Tacna', 'MaríaCamila123@gmail.com' ,'Female', 3, 1);
+insert into Cliente (client_id, dni, nombre, apellido, Direccion, correo, sexo, socio_id, compras) values (3, 38812926, 'Jorge Alberto', 'Perez de Cuella',  'Urb. Carolina De La Torre # 864 Dpto. 362 Núñez Sur, Huanuco','Jorge Alberto_12@gmail.com' ,'Female', 2, 2);
+insert into Cliente (client_id, dni, nombre, apellido, Direccion, correo, sexo, socio_id, compras) values (4, 27562495, 'Eduardo', 'Estela Pardo', 'Jr. Juan Esteban Ocampo # 05 Don Simón Olivas, Moquegua', 'Female', 'Estela Pardo455@gmail.com',2, 6);
+insert into Cliente (client_id, dni, nombre, apellido, Direccion, correo, sexo, socio_id, compras) values (5, 88865800, 'Luis', 'Bellido Loera', 'Jr. Laura Mejía # 4 Puerto Lucas, Piura', 'BellidoLuis12xd@gmail.com' ,'Female', 3, 2);
+
+
+
+#Insecion de la tabla Producto
+insert into Producto (producto_id, nombre, descripcion, precio) values (1, 'Pizza Americana Mediana', 'Los clasicos nunca pasan de moda', 15.99);
+insert into Producto (producto_id, nombre, descripcion, precio) values (2, 'Pizza Huawana Mediana', 'Una piña marca la diferencia', 13.99);
+insert into Producto (producto_id, nombre, descripcion, precio) values (3, 'Pizza Americana Grande', 'Los clasicos nunca pasan de moda', 45.99);
+insert into Producto (producto_id, nombre, descripcion, precio) values (4, 'Pizza Americana Personal', 'Disfrutalo tu mismo', 12.99);
+insert into Producto (producto_id, nombre, descripcion, precio) values (5, 'Pizza Mediterranea Mediana', 'Un submundo por conocer', 23.99);
+insert into Producto (producto_id, nombre, descripcion, precio) values (6, 'Pizza Americana XL', 'Disfrutalo con tus patas', 45.99);
+insert into Producto (producto_id, nombre, descripcion, precio) values (7, 'Menu Radioactivo', 'Conoce tus límites', 15.99);
+
+
+#Insercion de la tabla Insumo
+
+Insert into Insumo(insumo_id,nombre,descripcion,precio,unidad) values(1,'Jamon','Jamon Japonés',7.99,'3kg') 
+Insert into Insumo(insumo_id,nombre,descripcion,precio,unidad) values(2,'Queso','Queso Parmesano',3.99,'1kg') 
+Insert into Insumo(insumo_id,nombre,descripcion,precio,unidad) values(3,'Piña','Piña Huawaina',3.99,'4kg') 
+Insert into Insumo(insumo_id,nombre,descripcion,precio,unidad) values(4,'Harina','Harina Blanca',4.99,'5kg') 
+Insert into Insumo(insumo_id,nombre,descripcion,precio,unidad) values(5,'Tomate','Tomate Peruano',5.99,'5kg') 
+
+#Insercion de la tabla Insumo Producto
+Insert into ProductoInsumo(producto_id,insumo_id,cantidad) values(1,2,3.00) 
+Insert into ProductoInsumo(producto_id,insumo_id,cantidad) values(4,2,7.00) 
+Insert into ProductoInsumo(producto_id,insumo_id,cantidad) values(6,3,6.00) 
+Insert into ProductoInsumo(producto_id,insumo_id,cantidad) values(4,1,5.00) 
+Insert into ProductoInsumo(producto_id,insumo_id,cantidad) values(5,5,4.00) 
+
+#Insercion de la tabla Compra Proveedor
+Insert into CompraProveedor(compra_id,ruc,monto,fecha) values(1,13083308641,11.97,'12/04/2019') 
+Insert into CompraProveedor(compra_id,ruc,monto,fecha) values(2,13183738016,9.98,'02/03/2019') 
+Insert into CompraProveedor(compra_id,ruc,monto,fecha) values(3,13183738016,29.94,'01/12/2018') 
+Insert into CompraProveedor(compra_id,ruc,monto,fecha) values(4,16779304144,41.93,'28/11/2019') 
+Insert into CompraProveedor(compra_id,ruc,monto,fecha) values(5,16137927086,79.90,'07/04/2019') 
+
+
+#Insercion de la tabla DetalleCompra
+Insert into DetalleCompra(compra_id,insumo_id,cantidad,monto) values(1,2,3,3.99)
+Insert into DetalleCompra(compra_id,insumo_id,cantidad,monto) values(2,4,2,4.99)
+Insert into DetalleCompra(compra_id,insumo_id,cantidad,monto) values(3,4,6,4.99)
+Insert into DetalleCompra(compra_id,insumo_id,cantidad,monto) values(4,5,7,5.99)
+Insert into DetalleCompra(compra_id,insumo_id,cantidad,monto) values(5,1,10,7.99)
+
+
+
+#Insercion de la tabla PROMOCION
+Insert into Promocion(promocion_id,socio_id,description) values(1,2,'Pizza Americana Grande a S/ 39.99')
+Insert into Promocion(promocion_id,socio_id,description) values(2,4,'Pizza Americana XL a S/ 29.99')
+Insert into Promocion(promocion_id,socio_id,description) values(3,3,'Pizza Huawana Mediana S/ 9.99')
+Insert into Promocion(promocion_id,socio_id,description) values(4,1,'Menu Radioactivo a S/ 12.99')
+Insert into Promocion(promocion_id,socio_id,description) values(5,3,'Pizza Mediterranea Mediana a S/ 15.99')
+
+#Insercion de la tabla Producto Promocion
+Insert into ProductoPromocion(promocion_id,producto_id,descuento) values(1,3,10.00)
+Insert into ProductoPromocion(promocion_id,producto_id,descuento) values(2,6,16.00)
+Insert into ProductoPromocion(promocion_id,producto_id,descuento) values(3,2,4.00)
+Insert into ProductoPromocion(promocion_id,producto_id,descuento) values(4,7,3.00)
+Insert into ProductoPromocion(promocion_id,producto_id,descuento) values(5,5,8.00)
