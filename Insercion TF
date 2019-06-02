@@ -1,7 +1,3 @@
-create Database jironpizza;
-use jironpizza;
-
-
 /*Script de insercion para la tabla Local*/
 
 insert into Locals values ('Av Arequipa 1245, Lince', 32);
@@ -24,12 +20,12 @@ Insert into Almacen values(7)
 
 
 /*Script de insercion para la tabla Proveedor*/
-insert into Proveedor (ruc, razon_social, telefono, direccion) values (16137927086, 'Good Food S.A',  964810161, 'Av Andrés Gamarra 1244, La Victoria');
-insert into Proveedor (ruc, razon_social, telefono, direccion) values (15085893667, 'Botellita Zaki',  957094112, 'Av Matelini 8311, Barranco');
-insert into Proveedor (ruc, razon_social, telefono, direccion) values (16779304144, 'Adrenalina Buzz',  935031785, 'Av Larco 2233, Miraflores');
-insert into Proveedor (ruc, razon_social, telefono, direccion) values (15522576132, 'Los hermanos Kyoto',  956239300, 'Av 28 de Julio, Miraflores');
-insert into Proveedor (ruc, razon_social, telefono, direccion) values (14064629849, 'Rups S.A', 914321144, 'Av Tomas Valle 1298, San Martin de Porres');
-insert into Proveedor (ruc, razon_social, telefono, direccion) values (13183738016, 'Rubi&Lalo S.A',  931904769, 'Av Chinchaysuyo 3341, Lince');
+insert into Proveedor (ruc, razon_social,rubro, telefono, direccion) values (16137927086, 'Good Food S.A', 'Ofrecemos quesos de alta calidad',  964810161, 'Av Andrés Gamarra 1244, La Victoria');
+insert into Proveedor (ruc, razon_social,rubro, telefono, direccion) values (15085893667, 'Botellita Zaki','Ofrecemos los mejores envases para mantener la calidad de las bebidas',  957094112, 'Av Matelini 8311, Barranco');
+insert into Proveedor (ruc, razon_social,rubro, telefono, direccion) values (16779304144, 'Adrenalina Buzz', 'Ofrecemes utensilios', 935031785, 'Av Larco 2233, Miraflores');
+insert into Proveedor (ruc, razon_social,rubro, telefono, direccion) values (15522576132, 'Los hermanos Kyoto', 'Ofrecemos una gran variedad de jamones', 956239300, 'Av 28 de Julio, Miraflores');
+insert into Proveedor (ruc, razon_social,rubro, telefono, direccion) values (14064629849, 'Rups S.A','Ofrecemos las mejores masas, harina, verduras y sal',  914321144, 'Av Tomas Valle 1298, San Martin de Porres');
+insert into Proveedor (ruc, razon_social,rubro, telefono, direccion) values (13183738016, 'Rubi&Lalo S.A','Ofrecemos una gran variedad de escencia de jugos y gaseosas',  931904769, 'Av Chinchaysuyo 3341, Lince');
 
 
 /*Insercion de la tabla Socio*/
@@ -58,7 +54,7 @@ insert into Producto values ('Pizza Americana Grande', 'Los clasicos nunca pasan
 insert into Producto values ('Pizza Americana Personal', 'Disfrutalo tu mismo', 12.99);
 insert into Producto values ('Pizza Mediterranea Mediana', 'Un submundo por conocer', 23.99);
 insert into Producto values ('Pizza Americana XL', 'Disfrutalo con tus patas', 45.99);
-insert into Producto values ('Menu Radioactivo', 'Conoce tus límites', 15.99);
+insert into Producto values ('Pizza Alemana Mediana', 'Conoce tus límites', 15.99);
 
 
 /*Insercion de la tabla Insumo*/
@@ -154,7 +150,7 @@ Insert into Distrito values(4, 'Ate Vitarte')
 Insert into Distrito values(1, 'Chorrillos')
 Insert into Distrito values(5, 'Miraflores')
 
-SELECT * FROM distrito;
+
 
 /* Insercion de la tabla Calle*/
 Insert into Calle values(1,'Av Alameda Sur #1255')
@@ -182,28 +178,26 @@ Insert into Empleado values(3,4,3)
 
 
 /* Insercion de la tabla Asistencia */
-Insert into Asistencia values(2,'04/03/2018',NULL)
-Insert into Asistencia values(1,'14/04/2018','14/04/2019')
-Insert into Asistencia values(5,'23/05/2018','24/04/2019')
-Insert into Asistencia values(4,'19/06/2018',NULL)
-Insert into Asistencia values(3,'12/07/2018','19/04/2019')
+Insert into Asistencia values(2,'04-03-2018 10:34:28 ','04-03-2018 19:34:28')
+Insert into Asistencia values(1,'04-03-2018 10:35:01','04-03-2018 16:16:18')
+Insert into Asistencia values(5,'04-03-2018 10:32:03','04-03-2018 20:03:38')
+Insert into Asistencia values(4,'04-03-2018 10:31:10','04-03-2018 20:08:48')
+Insert into Asistencia values(3,'04-03-2018 10:30:15','04-03-2018 21:10:58')
 
 
 /* Insercion de la tabla Comprobante */
-Insert into Comprobante values(1,2,3,45.99,'24/03/2019')
-Insert into Comprobante values(2,4,2,12.99,'14/04/2019')
-Insert into Comprobante values(3,2,2,15.99,'20/06/2019')
-Insert into Comprobante values(4,1,1,45.99,'24/05/2019')
-Insert into Comprobante values(5,5,4,23.99,'02/04/2019')
+Insert into Comprobante values(1,2,3,45.99,'24-03-2019 13:14:28')
+Insert into Comprobante values(2,4,2,12.99,'14-04-2019 13:55:01')
+Insert into Comprobante values(3,2,2,15.99,'20-06-2019 16:12:03')
+Insert into Comprobante values(4,1,1,45.99,'24-05-2019 18:11:10')
+Insert into Comprobante values(5,5,4,23.99,'02-04-2019 19:30:15')
 
-SELECT * FROM comprobante;
+
 /* Insercion de la tabla Producto_Comprobante */
 Insert into ProductoComprobante values(1,3)
 Insert into ProductoComprobante values(2,4)
 Insert into ProductoComprobante values(3,1)
 Insert into ProductoComprobante values(4,2)
 Insert into ProductoComprobante values(5,5)
-
-
 
 
