@@ -1,0 +1,32 @@
+USE JironPizza;
+
+DROP TABLE ProductoComprobante;
+DROP TABLE Comprobante;
+DROP TABLE Asistencia;
+DROP TABLE Empleado;
+DROP TABLE InformacionEmpleado;
+DROP TABLE Calle;
+DROP TABLE Distrito;
+DROP TABLE Provincia;
+DROP TABLE TipoEmpleado;
+DROP TABLE InsumoAlmacen;
+DROP TABLE Almacen;
+DROP TABLE Mesa;
+DROP TABLE Locals;
+DROP TABLE Cliente;
+DROP TABLE ProductoPromocion;
+DROP TABLE Promocion;
+DROP TABLE Socio;
+DROP TABLE ProductoInsumo;
+DROP TABLE Producto;
+DROP TABLE DetalleCompra;
+DROP TABLE Insumo;
+DROP TABLE CompraProveedor;
+DROP TABLE Proveedor;
+
+USE master;
+GO
+ALTER DATABASE [JironPizza] SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+GO
+DROP DATABASE JironPizza;
+GO
