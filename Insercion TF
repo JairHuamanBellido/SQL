@@ -39,11 +39,11 @@ Insert into Socio values('Cliente platino','Pizza gratis en tu cumpleaños y 20%
 /*Insercion de la tabla Cliente*/
 
 /*Script de insercion para la tabla Cliente*/
-insert into Cliente  values (56539196, 'Bruno Fernando', 'Larios Escudero',  'Jr. Vicente Alcántar /* 3161 Piso 15 Miranda Sur, Callao','BrunoFernando1996@gmail.com' ,  'Male', 5, 3);
-insert into Cliente  values (76210006, 'María Camila', 'Solorzano Flores',  'Jr. Mateo Puente /* 95 Dpto. 487 Ivanna Baja, Tacna', 'MaríaCamila123@gmail.com' ,'Female', 5, 1);
-insert into Cliente  values (38812926, 'Jorge Alberto', 'Perez de Cuella',  'Urb. Carolina De La Torre /* 864 Dpto. 362 Núñez Sur, Huanuco','Jorge Alberto_12@gmail.com' ,'Female', 5, 2);
-insert into Cliente  values (27562495, 'Eduardo', 'Estela Pardo', 'Jr. Juan Esteban Ocampo /* 05 Don Simón Olivas, Moquegua', 'Female', 'Estela Pardo455@gmail.com',5, 6);
-insert into Cliente  values (88865800, 'Luis', 'Bellido Loera', 'Jr. Laura Mejía /* 4 Puerto Lucas, Piura', 'BellidoLuis12xd@gmail.com' ,'Female', 5, 2);
+insert into Cliente  values (56539196, 'Bruno Fernando','Larios Escudero',  'Jr. Vicente Alcántar  3161 Piso 15 Miranda Sur, Callao','BrunoFernando1996@gmail.com' ,  'Male', 1, 3);
+insert into Cliente  values (76210006, 'María Camila','Solorzano Flores', 'Jr. Mateo Puente  95 Dpto. 487 Ivanna Baja, Tacna', 'MaríaCamila123@gmail.com' ,'Female', 1, 1);
+insert into Cliente  values (38812926, 'Jorge Alberto','Perez de Cuella',  'Urb. Carolina De La Torre  864 Dpto. 362 Núñez Sur, Huanuco','Jorge Alberto_12@gmail.com' ,'Female', 1, 2);
+insert into Cliente  values (27562495, 'Eduardo','Estela Pardo',     'Jr. Juan Esteban Ocampo  05 Don Simón Olivas, Moquegua', 'Female', 'Estela Pardo455@gmail.com',1, 6);
+insert into Cliente  values (88865800, 'Luis','Bellido Loera',    'Jr. Laura Mejía  4 Puerto Lucas, Piura', 'BellidoLuis12xd@gmail.com' ,'Female', 1, 2);
 
 
 
