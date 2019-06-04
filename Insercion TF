@@ -38,11 +38,33 @@ Insert into Socio values('Cliente platino','Pizza gratis en tu cumpleaños y 20%
 /*Insercion de la tabla Cliente*/
 
 /*Script de insercion para la tabla Cliente*/
-insert into Cliente  values (56539196, 'Bruno Fernando','Larios Escudero',  'Jr. Vicente Alcántar  3161 Piso 15 Miranda Sur, Callao','BrunoFernando1996@gmail.com' ,  'Male', 1, 3);
-insert into Cliente  values (76210006, 'María Camila','Solorzano Flores', 'Jr. Mateo Puente  95 Dpto. 487 Ivanna Baja, Tacna', 'MaríaCamila123@gmail.com' ,'Female', 1, 1);
-insert into Cliente  values (38812926, 'Jorge Alberto','Perez de Cuella',  'Urb. Carolina De La Torre  864 Dpto. 362 Núñez Sur, Huanuco','Jorge Alberto_12@gmail.com' ,'Female', 1, 2);
-insert into Cliente  values (27562495, 'Eduardo','Estela Pardo',	 'Jr. Juan Esteban Ocampo  05 Don Simón Olivas, Moquegua',				'EstelaPardo455@gmail.com', 'Male',1, 6);
-insert into Cliente  values (88865800, 'Luis',	 'Bellido Loera',    'Jr. Laura Mejía  4 Puerto Lucas, Piura', 'BellidoLuis12xd@gmail.com' ,'Female', 1, 2);
+insert into Cliente values (12556487,	'Jose Alberto',	        'Perez del Solar',      'Jr Andres Galarza #123' 	                ,'Jpsolar@hotmail.com'	    ,'Hombre'	,1,	4);
+insert into Cliente values (94562544,	'Maria Fernanda',	    'Flores Escudero',      'Av 28 de julio #345'	                    ,'Maria12@gmail.com'	    ,'Mujer'	,1,	2);
+insert into Cliente values (78035544,	'Rosario',              'Bellido Caceres',      'Av Reducto #671'	                        ,'RosarioCB82@hotmail.com'	,'Mujer'	,1,	1);
+insert into Cliente values (15669812,	'Adrian Jesus',	        'Ramirez Soto',         'Av Tomas Valle #563 URB El Pinar'	        ,'AdrianJ28@outlook.com'	,'Hombre'	,1,	11);
+insert into Cliente values (63056488,	'Jose Adrian',	        'Mascaro Sifuente',     'Av Jose de la Serna #5512'	                ,'Jmcifuentes@gmail.com'	,'Hombre'	,1,	26);
+insert into Cliente values (42552489,	'Jair Orlando',	        'Huaman Bellido',       'Av Proceres de la independencia 1254'	    ,'huamanbellidoj@gmail.com'	,'Hombre'	,2,	60);
+insert into Cliente values (26663414,	'Eduardo',	            'Ortiz Pardo',          'Av Alameda Sur #1551'	                    ,'OrtiEdu12@gmail.com'	    ,'Hombre'	,2,	63);
+insert into Cliente values (25117866,	'Wilinngton',           'Ortiz	Estela',        'Av Barranco #4561'	                        ,'Willy1922@gmail.com'	    ,'Hombre'	,1,	12);
+insert into Cliente values (42003658,	'Anthony Jesus',	    'Bravo Berrio',         'Av Jorge Chavez #1234'	                    ,'BravoBerA@hotmail.com'	,'Hombre'	,3,	103);
+insert into Cliente values (78126055,	'Ricardo Daniel',	    'Iglesias Guzman',      'Jr Jose de la Serna  #912 URB Mirones'	    ,'Ridaniel12@gmail.com'	    ,'Hombre'	,1,	33);
+insert into Cliente values (79113365,	'Joaquin Alejandro',	'Espinoza Loera',       'Av Peru #1235'	                            ,'JJEspLoera29@gmail.com'	,'Hombre'	,1,	28);
+insert into Cliente values (15236478,	'Ana Rosa',	            'Montal Silva',         'Av Arequipa #9122 URB Lince'	            ,'Anita123@hotmail.com'	    ,'Mujer'	,1,	16);
+insert into Cliente values (73012266,	'Viviana',	            'Huaman Espinoza',      'Calle La Encalada #1267'	                ,'ViviEstrella192@gmail.com','Mujer'	,1,	16);
+insert into Cliente values (78152233,	'Elvira Luz',	        'Bazan Rosales',        'Av Canto Grande #911'	                    ,'ElvElv1299@gmail.com'	    ,'Mujer'	,1,	15);
+insert into Cliente values (14486799,	'Arnold',	            'Hernández Rojas',      'Calle 78 URB San Feliper #912'	            ,'ArHer1997245@gmail.com'	,'Hombre'	,1,	12);
+insert into Cliente values (12365548,	'Jose Luis',	        'Morales Ruiz',         'Jiron las arcillas #1277 URB San Gabriel'	,'JoseLuisMR1996@gmail.com'	,'Hombre'	,1,	11);
+insert into Cliente values (23781109,	'Mario',	            'Palomino Cardenas',    'Jiron las rocas #2444 URB San Carlos'	    ,'MarioPC2002@hotmail.es'	,'Hombre'	,1,	9);
+insert into Cliente values (78556499,	'Pedro',	            'Reyes Silva',          'Av Huaylas #1267'	                        ,'Prs192@gmail.com'	        ,'Hombre'	,1,	7);
+insert into Cliente values (36547812,	'Lucia',	            'Mendoza Mamani',       'Av Surco #765 URB San Luis'	            ,'LuciaX4ever@gmail.com'	,'Mujer'	,1,	6);
+insert into Cliente values (66529172,	'Amanada Vannessa',	    'Guiterrez del Sol',    'Jiron Cuzco #1064'	                        ,'AmmGS2001@gmail.com'	    ,'Mujer'	,1,	6);
+insert into Cliente values (17068845,	'Angie ',	            'Chavez Perez',         'Av Tacna #5506'	                        ,'AngAngC1995@gmail.com'	,'Mujer'	,1,	31);
+insert into Cliente values (15224788,	'Angela',	            'Vazques Cruz',         'Av Tupac Amaru #1222 Calle 13'	            ,'Fresita15@hotmail.es'	    ,'Mujer'	,1,	46);
+insert into Cliente values (20502416,	'Olenka',	            'Gomez Rivera',         'Av España #9446'	                        ,'Olenkaaaa1234@gmail.com'	,'Mujer'	,1,	20);
+insert into Cliente values (30516268,	'Jennifer',	            'Paredes Ruiz',         'Av Sanchez Carrion #5548'	                ,'JenParRu1203@gmail.com'	,'Mujer'	,2,	56);
+insert into Cliente values (10456633,	'Claudio',	            'Medina Leon',          'Av Canada #8812'	                        ,'ClauMeLe1998@gmail.com'	,'Hombre'	,2,	76);
+insert into Cliente values (10225788,	'Peter',	            'Salazar Viscarra',     'Av Honorio Delgado #795'	                ,'Ferrari1822@hotmail.es'	,'Hombre'	,1,	47);
+insert into Cliente values (90457812,	'Rodrigo',              'Hidalgo Herrar',       'Av Honorio Delgado #156'	                ,'RodRoda@gmail.com'	    ,'Hombre'	,1,	47);
 
 
 
