@@ -1,91 +1,96 @@
-/*Script de insercion para la tabla Local*/
 
-insert into Locals values ('Av Arequipa 1245, Lince', 32);
-insert into Locals values ('Av Proceres de la Independencia 2451, SJL', 38);
-insert into Locals values ('Paseo de la república 2812, Miraflores', 38);
-insert into Locals values ('Av Andrés Salazar 4122,La Victoria ', 35);
-insert into Locals values ('Av Alameda Sur 128, Chorrillos', 38);
-insert into Locals values ('Jiron Puno 1433, Cerado de Lima', 33);
-insert into Locals values ('Cerro Oculto Sendero 14, Ancón', 34);
+USE JironPizza;
+
+SET NOCOUNT ON;
+
+/* Script de insercion para la tabla Local */
+INSERT INTO Locals VALUES ('Av Arequipa 1245, Lince', 32);
+INSERT INTO Locals VALUES ('Av Proceres de la Independencia 2451, SJL', 38);
+INSERT INTO Locals VALUES ('Paseo de la república 2812, Miraflores', 38);
+INSERT INTO Locals VALUES ('Av Andrés Salazar 4122,La Victoria ', 35);
+INSERT INTO Locals VALUES ('Av Alameda Sur 128, Chorrillos', 38);
+INSERT INTO Locals VALUES ('Jiron Puno 1433, Cerado de Lima', 33);
+INSERT INTO Locals VALUES ('Cerro Oculto Sendero 14, Ancón', 34);
+
 
 /*Script de insercion para la tabla Almacen*/
-Insert into Almacen values(1)
-Insert into Almacen values(2)
-Insert into Almacen values(3)
-Insert into Almacen values(4)
-Insert into Almacen values(5)
-Insert into Almacen values(6)
-Insert into Almacen values(7)
+INSERT INTO Almacen VALUES(1);
+INSERT INTO Almacen VALUES(2);
+INSERT INTO Almacen VALUES(3);
+INSERT INTO Almacen VALUES(4);
+INSERT INTO Almacen VALUES(5);
+INSERT INTO Almacen VALUES(6);
+INSERT INTO Almacen VALUES(7);
 
 
 
 /*Script de insercion para la tabla Proveedor*/
-insert into Proveedor (ruc, razon_social,rubro, telefono, direccion) values (16137927086, 'Good Food S.A', 'Ofrecemos quesos de alta calidad',  964810161, 'Av Andrés Gamarra 1244, La Victoria');
-insert into Proveedor (ruc, razon_social,rubro, telefono, direccion) values (15085893667, 'Botellita Zaki','Ofrecemos los mejores envases para mantener la calidad de las bebidas',  957094112, 'Av Matelini 8311, Barranco');
-insert into Proveedor (ruc, razon_social,rubro, telefono, direccion) values (16779304144, 'Adrenalina Buzz', 'Ofrecemes utensilios', 935031785, 'Av Larco 2233, Miraflores');
-insert into Proveedor (ruc, razon_social,rubro, telefono, direccion) values (15522576132, 'Los hermanos Kyoto', 'Ofrecemos una gran variedad de jamones', 956239300, 'Av 28 de Julio, Miraflores');
-insert into Proveedor (ruc, razon_social,rubro, telefono, direccion) values (14064629849, 'Rups S.A','Ofrecemos las mejores masas, harina, verduras y sal',  914321144, 'Av Tomas Valle 1298, San Martin de Porres');
-insert into Proveedor (ruc, razon_social,rubro, telefono, direccion) values (13183738016, 'Rubi&Lalo S.A','Ofrecemos una gran variedad de escencia de jugos y gaseosas',  931904769, 'Av Chinchaysuyo 3341, Lince');
+INSERT INTO Proveedor (ruc, razon_social,rubro, telefono, direccion) VALUES (16137927086, 'Good Food S.A', 'Ofrecemos quesos de alta calidad',  964810161, 'Av Andrés Gamarra 1244, La Victoria');
+INSERT INTO Proveedor (ruc, razon_social,rubro, telefono, direccion) VALUES (15085893667, 'Botellita Zaki','Ofrecemos los mejores envases para mantener la calidad de las bebidas',  957094112, 'Av Matelini 8311, Barranco');
+INSERT INTO Proveedor (ruc, razon_social,rubro, telefono, direccion) VALUES (16779304144, 'Adrenalina Buzz', 'Ofrecemes utensilios', 935031785, 'Av Larco 2233, Miraflores');
+INSERT INTO Proveedor (ruc, razon_social,rubro, telefono, direccion) VALUES (15522576132, 'Los hermanos Kyoto', 'Ofrecemos una gran variedad de jamones', 956239300, 'Av 28 de Julio, Miraflores');
+INSERT INTO Proveedor (ruc, razon_social,rubro, telefono, direccion) VALUES (14064629849, 'Rups S.A','Ofrecemos las mejores masas, harina, verduras y sal',  914321144, 'Av Tomas Valle 1298, San Martin de Porres');
+INSERT INTO Proveedor (ruc, razon_social,rubro, telefono, direccion) VALUES (13183738016, 'Rubi&Lalo S.A','Ofrecemos una gran variedad de escencia de jugos y gaseosas',  931904769, 'Av Chinchaysuyo 3341, Lince');
 
 
 /*Insercion de la tabla Socio*/
-Insert into Socio values('Cliente Normal','Sorteo Mensual por una pizza Americana Familiar',1)
-Insert into Socio values('Cliente de Bronce','50% de descuento cada 10 visitas, 5% de descuento en combos',50)
-Insert into Socio values('Cliente golden','Una pizza familiar por mes, 15% de descuento en combos',100)
-Insert into Socio values('Cliente platino','Pizza gratis en tu cumpleaños y 20% de descuento en los combos',200)
+INSERT INTO Socio VALUES('Cliente Normal','Sorteo Mensual por una pizza Americana Familiar',1)
+INSERT INTO Socio VALUES('Cliente de Bronce','50% de descuento cada 10 visitas, 5% de descuento en combos',50)
+INSERT INTO Socio VALUES('Cliente golden','Una pizza familiar por mes, 15% de descuento en combos',100)
+INSERT INTO Socio VALUES('Cliente platino','Pizza gratis en tu cumpleaños y 20% de descuento en los combos',200)
 
 
 /*Insercion de la tabla Cliente*/
 
 /*Script de insercion para la tabla Cliente*/
-insert into Cliente values (12556487,	'Jose Alberto',	        'Perez del Solar',      'Jr Andres Galarza #123' 	                ,'Jpsolar@hotmail.com'	    ,'Hombre'	,1,	4);
-insert into Cliente values (94562544,	'Maria Fernanda',	    'Flores Escudero',      'Av 28 de julio #345'	                    ,'Maria12@gmail.com'	    ,'Mujer'	,1,	2);
-insert into Cliente values (78035544,	'Rosario',              'Bellido Caceres',      'Av Reducto #671'	                        ,'RosarioCB82@hotmail.com'	,'Mujer'	,1,	1);
-insert into Cliente values (15669812,	'Adrian Jesus',	        'Ramirez Soto',         'Av Tomas Valle #563 URB El Pinar'	        ,'AdrianJ28@outlook.com'	,'Hombre'	,1,	11);
-insert into Cliente values (63056488,	'Jose Adrian',	        'Mascaro Sifuente',     'Av Jose de la Serna #5512'	                ,'Jmcifuentes@gmail.com'	,'Hombre'	,1,	26);
-insert into Cliente values (42552489,	'Jair Orlando',	        'Huaman Bellido',       'Av Proceres de la independencia 1254'	    ,'huamanbellidoj@gmail.com'	,'Hombre'	,2,	60);
-insert into Cliente values (26663414,	'Eduardo',	            'Ortiz Pardo',          'Av Alameda Sur #1551'	                    ,'OrtiEdu12@gmail.com'	    ,'Hombre'	,2,	63);
-insert into Cliente values (25117866,	'Wilinngton',           'Ortiz	Estela',        'Av Barranco #4561'	                        ,'Willy1922@gmail.com'	    ,'Hombre'	,1,	12);
-insert into Cliente values (42003658,	'Anthony Jesus',	    'Bravo Berrio',         'Av Jorge Chavez #1234'	                    ,'BravoBerA@hotmail.com'	,'Hombre'	,3,	103);
-insert into Cliente values (78126055,	'Ricardo Daniel',	    'Iglesias Guzman',      'Jr Jose de la Serna  #912 URB Mirones'	    ,'Ridaniel12@gmail.com'	    ,'Hombre'	,1,	33);
-insert into Cliente values (79113365,	'Joaquin Alejandro',	'Espinoza Loera',       'Av Peru #1235'	                            ,'JJEspLoera29@gmail.com'	,'Hombre'	,1,	28);
-insert into Cliente values (15236478,	'Ana Rosa',	            'Montal Silva',         'Av Arequipa #9122 URB Lince'	            ,'Anita123@hotmail.com'	    ,'Mujer'	,1,	16);
-insert into Cliente values (73012266,	'Viviana',	            'Huaman Espinoza',      'Calle La Encalada #1267'	                ,'ViviEstrella192@gmail.com','Mujer'	,1,	16);
-insert into Cliente values (78152233,	'Elvira Luz',	        'Bazan Rosales',        'Av Canto Grande #911'	                    ,'ElvElv1299@gmail.com'	    ,'Mujer'	,1,	15);
-insert into Cliente values (14486799,	'Arnold',	            'Hernández Rojas',      'Calle 78 URB San Feliper #912'	            ,'ArHer1997245@gmail.com'	,'Hombre'	,1,	12);
-insert into Cliente values (12365548,	'Jose Luis',	        'Morales Ruiz',         'Jiron las arcillas #1277 URB San Gabriel'	,'JoseLuisMR1996@gmail.com'	,'Hombre'	,1,	11);
-insert into Cliente values (23781109,	'Mario',	            'Palomino Cardenas',    'Jiron las rocas #2444 URB San Carlos'	    ,'MarioPC2002@hotmail.es'	,'Hombre'	,1,	9);
-insert into Cliente values (78556499,	'Pedro',	            'Reyes Silva',          'Av Huaylas #1267'	                        ,'Prs192@gmail.com'	        ,'Hombre'	,1,	7);
-insert into Cliente values (36547812,	'Lucia',	            'Mendoza Mamani',       'Av Surco #765 URB San Luis'	            ,'LuciaX4ever@gmail.com'	,'Mujer'	,1,	6);
-insert into Cliente values (66529172,	'Amanada Vannessa',	    'Guiterrez del Sol',    'Jiron Cuzco #1064'	                        ,'AmmGS2001@gmail.com'	    ,'Mujer'	,1,	6);
-insert into Cliente values (17068845,	'Angie ',	            'Chavez Perez',         'Av Tacna #5506'	                        ,'AngAngC1995@gmail.com'	,'Mujer'	,1,	31);
-insert into Cliente values (15224788,	'Angela',	            'Vazques Cruz',         'Av Tupac Amaru #1222 Calle 13'	            ,'Fresita15@hotmail.es'	    ,'Mujer'	,1,	46);
-insert into Cliente values (20502416,	'Olenka',	            'Gomez Rivera',         'Av España #9446'	                        ,'Olenkaaaa1234@gmail.com'	,'Mujer'	,1,	20);
-insert into Cliente values (30516268,	'Jennifer',	            'Paredes Ruiz',         'Av Sanchez Carrion #5548'	                ,'JenParRu1203@gmail.com'	,'Mujer'	,2,	56);
-insert into Cliente values (10456633,	'Claudio',	            'Medina Leon',          'Av Canada #8812'	                        ,'ClauMeLe1998@gmail.com'	,'Hombre'	,2,	76);
-insert into Cliente values (10225788,	'Peter',	            'Salazar Viscarra',     'Av Honorio Delgado #795'	                ,'Ferrari1822@hotmail.es'	,'Hombre'	,1,	47);
-insert into Cliente values (90457812,	'Rodrigo',              'Hidalgo Herrar',       'Av Honorio Delgado #156'	                ,'RodRoda@gmail.com'	    ,'Hombre'	,1,	47);
+INSERT INTO Cliente VALUES (12556487,	'Jose Alberto',	        'Perez del Solar',      'Jr Andres Galarza #123' 	                ,'Jpsolar@hotmail.com'	    ,'Hombre'	,1,	4);
+INSERT INTO Cliente VALUES (94562544,	'Maria Fernanda',	    'Flores Escudero',      'Av 28 de julio #345'	                    ,'Maria12@gmail.com'	    ,'Mujer'	,1,	2);
+INSERT INTO Cliente VALUES (78035544,	'Rosario',              'Bellido Caceres',      'Av Reducto #671'	                        ,'RosarioCB82@hotmail.com'	,'Mujer'	,1,	1);
+INSERT INTO Cliente VALUES (15669812,	'Adrian Jesus',	        'Ramirez Soto',         'Av Tomas Valle #563 URB El Pinar'	        ,'AdrianJ28@outlook.com'	,'Hombre'	,1,	11);
+INSERT INTO Cliente VALUES (63056488,	'Jose Adrian',	        'Mascaro Sifuente',     'Av Jose de la Serna #5512'	                ,'Jmcifuentes@gmail.com'	,'Hombre'	,1,	26);
+INSERT INTO Cliente VALUES (42552489,	'Jair Orlando',	        'Huaman Bellido',       'Av Proceres de la independencia 1254'	    ,'huamanbellidoj@gmail.com'	,'Hombre'	,2,	60);
+INSERT INTO Cliente VALUES (26663414,	'Eduardo',	            'Ortiz Pardo',          'Av Alameda Sur #1551'	                    ,'OrtiEdu12@gmail.com'	    ,'Hombre'	,2,	63);
+INSERT INTO Cliente VALUES (25117866,	'Wilinngton',           'Ortiz	Estela',        'Av Barranco #4561'	                        ,'Willy1922@gmail.com'	    ,'Hombre'	,1,	12);
+INSERT INTO Cliente VALUES (42003658,	'Anthony Jesus',	    'Bravo Berrio',         'Av Jorge Chavez #1234'	                    ,'BravoBerA@hotmail.com'	,'Hombre'	,3,	103);
+INSERT INTO Cliente VALUES (78126055,	'Ricardo Daniel',	    'Iglesias Guzman',      'Jr Jose de la Serna  #912 URB Mirones'	    ,'Ridaniel12@gmail.com'	    ,'Hombre'	,1,	33);
+INSERT INTO Cliente VALUES (79113365,	'Joaquin Alejandro',	'Espinoza Loera',       'Av Peru #1235'	                            ,'JJEspLoera29@gmail.com'	,'Hombre'	,1,	28);
+INSERT INTO Cliente VALUES (15236478,	'Ana Rosa',	            'Montal Silva',         'Av Arequipa #9122 URB Lince'	            ,'Anita123@hotmail.com'	    ,'Mujer'	,1,	16);
+INSERT INTO Cliente VALUES (73012266,	'Viviana',	            'Huaman Espinoza',      'Calle La Encalada #1267'	                ,'ViviEstrella192@gmail.com','Mujer'	,1,	16);
+INSERT INTO Cliente VALUES (78152233,	'Elvira Luz',	        'Bazan Rosales',        'Av Canto Grande #911'	                    ,'ElvElv1299@gmail.com'	    ,'Mujer'	,1,	15);
+INSERT INTO Cliente VALUES (14486799,	'Arnold',	            'Hernández Rojas',      'Calle 78 URB San Feliper #912'	            ,'ArHer1997245@gmail.com'	,'Hombre'	,1,	12);
+INSERT INTO Cliente VALUES (12365548,	'Jose Luis',	        'Morales Ruiz',         'Jiron las arcillas #1277 URB San Gabriel'	,'JoseLuisMR1996@gmail.com'	,'Hombre'	,1,	11);
+INSERT INTO Cliente VALUES (23781109,	'Mario',	            'Palomino Cardenas',    'Jiron las rocas #2444 URB San Carlos'	    ,'MarioPC2002@hotmail.es'	,'Hombre'	,1,	9);
+INSERT INTO Cliente VALUES (78556499,	'Pedro',	            'Reyes Silva',          'Av Huaylas #1267'	                        ,'Prs192@gmail.com'	        ,'Hombre'	,1,	7);
+INSERT INTO Cliente VALUES (36547812,	'Lucia',	            'Mendoza Mamani',       'Av Surco #765 URB San Luis'	            ,'LuciaX4ever@gmail.com'	,'Mujer'	,1,	6);
+INSERT INTO Cliente VALUES (66529172,	'Amanada Vannessa',	    'Guiterrez del Sol',    'Jiron Cuzco #1064'	                        ,'AmmGS2001@gmail.com'	    ,'Mujer'	,1,	6);
+INSERT INTO Cliente VALUES (17068845,	'Angie ',	            'Chavez Perez',         'Av Tacna #5506'	                        ,'AngAngC1995@gmail.com'	,'Mujer'	,1,	31);
+INSERT INTO Cliente VALUES (15224788,	'Angela',	            'Vazques Cruz',         'Av Tupac Amaru #1222 Calle 13'	            ,'Fresita15@hotmail.es'	    ,'Mujer'	,1,	46);
+INSERT INTO Cliente VALUES (20502416,	'Olenka',	            'Gomez Rivera',         'Av España #9446'	                        ,'Olenkaaaa1234@gmail.com'	,'Mujer'	,1,	20);
+INSERT INTO Cliente VALUES (30516268,	'Jennifer',	            'Paredes Ruiz',         'Av Sanchez Carrion #5548'	                ,'JenParRu1203@gmail.com'	,'Mujer'	,2,	56);
+INSERT INTO Cliente VALUES (10456633,	'Claudio',	            'Medina Leon',          'Av Canada #8812'	                        ,'ClauMeLe1998@gmail.com'	,'Hombre'	,2,	76);
+INSERT INTO Cliente VALUES (10225788,	'Peter',	            'Salazar Viscarra',     'Av Honorio Delgado #795'	                ,'Ferrari1822@hotmail.es'	,'Hombre'	,1,	47);
+INSERT INTO Cliente VALUES (90457812,	'Rodrigo',              'Hidalgo Herrar',       'Av Honorio Delgado #156'	                ,'RodRoda@gmail.com'	    ,'Hombre'	,1,	47);
 
 
 
 
 /*Insecion de la tabla Producto*/
-insert into Producto values ('Pizza Americana Mediana', 'Los clasicos nunca pasan de moda', 15.99);
-insert into Producto values ('Pizza Huawana Mediana', 'Una piña marca la diferencia', 13.99);
-insert into Producto values ('Pizza Americana Grande', 'Los clasicos nunca pasan de moda', 45.99);
-insert into Producto values ('Pizza Americana Personal', 'Disfrutalo tu mismo', 12.99);
-insert into Producto values ('Pizza Mediterranea Mediana', 'Un submundo por conocer', 23.99);
-insert into Producto values ('Pizza Americana XL', 'Disfrutalo con tus patas', 45.99);
-insert into Producto values ('Pizza Alemana Mediana', 'Conoce tus límites', 15.99);
+INSERT INTO Producto VALUES ('Pizza Americana Mediana', 'Los clasicos nunca pasan de moda', 15.99);
+INSERT INTO Producto VALUES ('Pizza Huawana Mediana', 'Una piña marca la diferencia', 13.99);
+INSERT INTO Producto VALUES ('Pizza Americana Grande', 'Los clasicos nunca pasan de moda', 45.99);
+INSERT INTO Producto VALUES ('Pizza Americana Personal', 'Disfrutalo tu mismo', 12.99);
+INSERT INTO Producto VALUES ('Pizza Mediterranea Mediana', 'Un submundo por conocer', 23.99);
+INSERT INTO Producto VALUES ('Pizza Americana XL', 'Disfrutalo con tus patas', 45.99);
+INSERT INTO Producto VALUES ('Pizza Alemana Mediana', 'Conoce tus límites', 15.99);
 
 
 /*Insercion de la tabla Insumo*/
 
-Insert into Insumo values('Jamon','Jamon Japonés',7.99,'3kg') 
-Insert into Insumo values('Queso','Queso Parmesano',3.99,'1kg') 
-Insert into Insumo values('Piña','Piña Huawaina',3.99,'4kg') 
-Insert into Insumo values('Harina','Harina Blanca',4.99,'5kg') 
-Insert into Insumo values('Tomate','Tomate Peruano',5.99,'5kg') 
+Insert into Insumo values('Jamon','Jamon Japonés',7.99,'kg', 29)
+Insert into Insumo values('Queso','Queso Parmesano',3.99,'kg', 31) 
+Insert into Insumo values('Piña','Piña Huawaina',3.99,'kg', 37) 
+Insert into Insumo values('Harina','Harina Blanca',4.99,'kg', 41) 
+Insert into Insumo values('Tomate','Tomate Peruano',5.99,'kg', 83) 
 
 
 /*Insercion de la tabla Insumo Producto*/
@@ -97,11 +102,11 @@ Insert into ProductoInsumo(producto_id,insumo_id,cantidad) values(5,5,4.00)
 
 
 /*Insercion de la tabla Compra Proveedor*/
-Insert into CompraProveedor values(15085893667,11.97,'12/04/2019') 
-Insert into CompraProveedor values(13183738016,9.98,'02/03/2019') 
-Insert into CompraProveedor values(13183738016,29.94,'01/12/2018') 
-Insert into CompraProveedor values(16779304144,41.93,'28/11/2019') 
-Insert into CompraProveedor values(16137927086,79.90,'07/04/2019') 
+Insert into CompraProveedor values(15085893667,11.97,'12/06/2019') 
+Insert into CompraProveedor values(13183738016,9.98,'02/06/2019') 
+Insert into CompraProveedor values(13183738016,29.94,'01/06/2018') 
+Insert into CompraProveedor values(16779304144,41.93,'28/06/2019') 
+Insert into CompraProveedor values(16137927086,79.90,'07/06/2019') 
 
 
 /*Insercion de la tabla DetalleCompra*/
@@ -354,7 +359,7 @@ Insert into Asistencia values(1,'04-03-2018 10:35:01','04-03-2018 16:16:18')
 Insert into Asistencia values(5,'04-03-2018 10:32:03','04-03-2018 20:03:38')
 Insert into Asistencia values(4,'04-03-2018 10:31:10','04-03-2018 20:08:48')
 Insert into Asistencia values(3,'04-03-2018 10:30:15','04-03-2018 21:10:58')
-
+Insert into Asistencia values(3,'20-06-2019 10:30:15','04-03-2018 21:10:58')
 
 
 /* Insercion de la tabla Comprobante */
@@ -652,3 +657,5 @@ insert into ProductoComprobante values(1,141)
 insert into ProductoComprobante values(1,142)
 insert into ProductoComprobante values(3,143)
 insert into ProductoComprobante values(6,144)
+
+
