@@ -1,5 +1,83 @@
 USE JironPizza;
 
+/* VACIADO DE TABLAS */
+-- Tablas nuevas
+DELETE FROM Tardanzas;
+	DBCC CHECKIDENT('Tardanzas', RESEED, 0);
+DELETE FROM Historial_insumo;
+	DBCC CHECKIDENT('Historial_insumo', RESEED, 0);
+
+-- Tablas base de datos
+SET NOCOUNT ON;
+DELETE FROM ProductoComprobante;
+
+DELETE FROM Comprobante;
+	DBCC CHECKIDENT('Comprobante', RESEED, 0);
+
+DELETE FROM Asistencia;
+	DBCC CHECKIDENT('Asistencia', RESEED, 0);
+
+DELETE FROM Empleado;
+	DBCC CHECKIDENT('Empleado', RESEED, 0);
+
+DELETE FROM InformacionEmpleado;
+	DBCC CHECKIDENT('InformacionEmpleado', RESEED, 0);
+
+DELETE FROM Calle;
+	DBCC CHECKIDENT('Calle', RESEED, 0);
+
+DELETE FROM Distrito;
+	DBCC CHECKIDENT('Distrito', RESEED, 0);
+
+DELETE FROM Provincia;
+	DBCC CHECKIDENT('Provincia', RESEED, 0);
+
+DELETE FROM TipoEmpleado;
+	DBCC CHECKIDENT('TipoEmpleado', RESEED, 0);
+
+DELETE FROM InsumoAlmacen;
+
+DELETE FROM Almacen;
+	DBCC CHECKIDENT('Almacen', RESEED, 0);
+
+DELETE FROM Mesa;
+	DBCC CHECKIDENT('Mesa', RESEED, 0);
+
+DELETE FROM Locals;
+	DBCC CHECKIDENT('Locals', RESEED, 0);
+
+DELETE FROM Cliente;
+	DBCC CHECKIDENT('Cliente', RESEED, 0);
+
+DELETE FROM ProductoPromocion;
+	
+DELETE FROM Promocion;
+	DBCC CHECKIDENT('Promocion', RESEED, 0);
+
+DELETE FROM Socio;
+	DBCC CHECKIDENT('Socio', RESEED, 0);
+
+DELETE FROM ProductoInsumo;
+
+DELETE FROM Producto;
+	DBCC CHECKIDENT('Producto', RESEED, 0);
+
+DELETE FROM DetalleCompra;
+
+DELETE FROM Insumo;
+	DBCC CHECKIDENT('Insumo', RESEED, 0);
+
+DELETE FROM CompraProveedor;
+	DBCC CHECKIDENT('CompraProveedor', RESEED, 0);
+
+DELETE FROM Proveedor;
+
+
+/* Eliminacion de tablas */
+-- Tablas nuevas
+DROP TABLE Tardanzas;
+DROP TABLE Historial_insumo;
+
 DROP TABLE ProductoComprobante;
 DROP TABLE Comprobante;
 DROP TABLE Asistencia;
