@@ -33,7 +33,8 @@ insumo_id INT IDENTITY(1,1) PRIMARY KEY,
 nombre VARCHAR(100) NOT NULL,
 descripcion VARCHAR(150),
 precio MONEY CHECK(precio > 0) NOT NULL,
-unidad VARCHAR(50) NOT NULL
+unidad VARCHAR(50) NOT NULL,
+stock INT
 );
 
 
