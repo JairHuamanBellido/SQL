@@ -34,7 +34,7 @@ nombre VARCHAR(100) NOT NULL,
 descripcion VARCHAR(150),
 precio MONEY CHECK(precio > 0) NOT NULL,
 unidad VARCHAR(50) NOT NULL,
-stock INT
+stock FLOAT CHECK(stock >= 0.0) NOT NULL
 );
 
 
@@ -226,8 +226,8 @@ informacion_id INT UNIQUE NOT NULL FOREIGN KEY REFERENCES InformacionEmpleado(in
 CREATE TABLE Asistencia(
 asistencia_id INT IDENTITY(1,1) PRIMARY KEY,
 empleado_id INT NOT NULL FOREIGN KEY REFERENCES Empleado(empleado_id),
-ingreso smalldatetime,
-salida smalldatetime
+ingreso DATE,
+salida DATE
 );
 
 
