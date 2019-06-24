@@ -13,6 +13,8 @@ INSERT INTO Locals VALUES ('Jiron Puno 1433, Cerado de Lima', 33);
 INSERT INTO Locals VALUES ('Cerro Oculto Sendero 14, Ancón', 34);
 
 
+
+
 /*Script de insercion para la tabla Almacen*/
 INSERT INTO Almacen VALUES(1);
 INSERT INTO Almacen VALUES(2);
@@ -21,7 +23,6 @@ INSERT INTO Almacen VALUES(4);
 INSERT INTO Almacen VALUES(5);
 INSERT INTO Almacen VALUES(6);
 INSERT INTO Almacen VALUES(7);
-
 
 
 /*Script de insercion para la tabla Proveedor*/
@@ -37,7 +38,7 @@ INSERT INTO Proveedor (ruc, razon_social,rubro, telefono, direccion) VALUES (131
 INSERT INTO Socio VALUES('Cliente Normal','Sorteo Mensual por una pizza Americana Familiar',1)
 INSERT INTO Socio VALUES('Cliente de Bronce','50% de descuento cada 10 visitas, 5% de descuento en combos',50)
 INSERT INTO Socio VALUES('Cliente golden','Una pizza familiar por mes, 15% de descuento en combos',100)
-INSERT INTO Socio VALUES('Cliente platino','Pizza gratis en tu cumpleaños y 20% de descuento en los combos',200)
+INSERT INTO Socio VALUES('Cliente platino','Pizza gratis en tu cumpleaños y 20% de descuento en los combos',150)
 
 
 /*Insercion de la tabla Cliente*/
@@ -78,6 +79,8 @@ INSERT INTO Cliente VALUES (23784566,	'Juan David',	        'Blanco Sotelo',    
 
 
 
+
+
 /*Insecion de la tabla Producto*/
 INSERT INTO Producto VALUES ('Pizza Americana Mediana', 'Los clasicos nunca pasan de moda', 15.99);
 INSERT INTO Producto VALUES ('Pizza Huawana Mediana', 'Una piña marca la diferencia', 13.99);
@@ -97,12 +100,15 @@ Insert into Insumo values('Harina','Harina Blanca',4.99,'kg', 41)
 Insert into Insumo values('Tomate','Tomate Peruano',5.99,'kg', 83) 
 
 
+
+
 /*Insercion de la tabla Insumo Producto*/
 Insert into ProductoInsumo(producto_id,insumo_id,cantidad) values(1,2,3.00) 
 Insert into ProductoInsumo(producto_id,insumo_id,cantidad) values(4,2,7.00) 
 Insert into ProductoInsumo(producto_id,insumo_id,cantidad) values(6,3,6.00) 
 Insert into ProductoInsumo(producto_id,insumo_id,cantidad) values(4,1,5.00) 
 Insert into ProductoInsumo(producto_id,insumo_id,cantidad) values(5,5,4.00) 
+
 
 
 /*Insercion de la tabla Compra Proveedor*/
@@ -122,12 +128,15 @@ Insert into DetalleCompra(compra_id,insumo_id,cantidad,monto) values(5,1,10,7.99
 
 
 
+
+
 /*Insercion de la tabla PROMOCION*/
 Insert into Promocion values(2,'Pizza Americana Grande a S/ 39.99')
 Insert into Promocion values(4,'Pizza Americana XL a S/ 29.99')
 Insert into Promocion values(3,'Pizza Huawana Mediana S/ 9.99')
 Insert into Promocion values(1,'Menu Radioactivo a S/ 12.99')
 Insert into Promocion values(3,'Pizza Mediterranea Mediana a S/ 15.99')
+
 
 
 /*Insercion de la tabla Producto Promocion*/
@@ -203,8 +212,6 @@ Insert into TipoEmpleado values('Personal de caja',700.00)
 
 /* Insercion de la tabla Provincia*/
 Insert into Provincia values('Lima')
-
-
 
 
 /* Insercion de la tabla Distrito*/
@@ -602,7 +609,6 @@ insert into Comprobante values(25	,17 	,19	    ,43.69  	,'12/11/2018')
 insert into Comprobante values(27	,18 	,23	    ,15.99  	,'04/11/2018')
 insert into Comprobante values(31	,12 	,12	    ,15.19  	,'05/11/2018')
 insert into Comprobante values(29	,11 	,16	    ,45.99  	,'06/11/2018')
- 
 
 
 
@@ -843,5 +849,3 @@ insert into ProductoComprobante values (6,232)
 insert into ProductoComprobante values (1,233)
 insert into ProductoComprobante values (7,234)
 insert into ProductoComprobante values (3,235)
-
-
